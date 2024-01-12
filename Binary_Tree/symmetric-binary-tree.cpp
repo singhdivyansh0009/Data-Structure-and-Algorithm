@@ -34,6 +34,7 @@ int main(){
    root->left->right = new TreeNode (40);
    root->right->left = new TreeNode (40);
    root->right->right = new TreeNode (30);
+   isSymmetric(root) ? cout << "Yes": cout << "NO";
     
 }
 /*
