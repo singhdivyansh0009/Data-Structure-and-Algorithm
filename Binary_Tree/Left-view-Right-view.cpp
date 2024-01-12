@@ -61,15 +61,16 @@ vector<int> printRightView(TreeNode* root) {
 }
 int main(){
    TreeNode* root = NULL;
-   root->data = new TreeNode (5);
-   root->left->data = new TreeNode (10);
-   root->right->data = new TreeNode (20);
-   root->left->left->data = new TreeNode (30);
-   root->left->right->data = new TreeNode (40);
-   root->right->left->data = new TreeNode (50);
-   root->right->right->data = new TreeNode (60);
+   root = new TreeNode (5);
+   root->left = new TreeNode (10);
+   root->right = new TreeNode (20);
+   root->left->left = new TreeNode (30);
+   root->left->right = new TreeNode (40);
+   root->right->left = new TreeNode (50);
+   root->right->right = new TreeNode (60);
    vector<int>ans;
-   ans = printLeftView(root);
+//   ans = printLeftView(root);
+   ans = printRightView(root);
    for(auto i : ans)
       cout << i << " ";
 }
