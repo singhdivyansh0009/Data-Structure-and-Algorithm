@@ -14,23 +14,27 @@ class graph{
        for(auto i : adj){
          cout << i.first << "->";
          for(auto j : i.second){
-            cout << j << " ";
+            cout << j << ",";
          }
+         cout << endl;
+       }
      }
-}
+};
 int main(){
     int noOfvertices,noOfEdge;
     cout << "enter the no. of vertices and Edeges:";
     cin >> noOfvertices >> noOfEdge;
     int u,v;
-    cout <<"enter the connections":;
-    for(int i = 0; i < noOfEdges; i++)
+     graph g;
+    cout <<"enter the connections";
+    for(int i = 0; i < noOfEdge; i++){
        cin >> u >> v;
-    graph g;
-    g.addEdge(u,v,dir)
+       g.addEdge(u,v,0);
+    }
+    g.print();
 }
 /*
   1---2
-  |    
+    /    
   3---4
-      */
+ */
