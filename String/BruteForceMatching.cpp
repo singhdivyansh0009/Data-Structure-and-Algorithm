@@ -1,0 +1,1 @@
+/* Brute force approach for the pattern matching in string */
